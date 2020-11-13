@@ -1,6 +1,6 @@
 # ex0 - OOP
 
-## node_data:
+### node_data:
 this interface is implemented by class NodeData,
 each node contains:
 1. key: unique key for every node, no 2 nodes with the same key.
@@ -8,7 +8,7 @@ each node contains:
 3. info: contains the node's info.
 4. tag: used in the BFS alogrithm for finding the shortest path, used as marking the distance from the start node.
 
-## graph:
+### graph:
 this interface is implemented by class Graph_DS.
 each graph is represented ny a HashMap contains all nodes in graph by their keys.
 each graph contains:
@@ -16,12 +16,12 @@ each graph contains:
 2. edges: int that represents the number of edges in graph.
 3. modeCount: int for counting the changes being made in the graph.
 
-## graph_algorithms:
+### graph_algorithms:
 this inteface is implemented by class Graph_Algo.
 each method uses the pre-made method in classes Graph_DS, NodeData.
 Methods: isConnected, shortestPathDist, shortestPath uses 2 algorithm made in an additional class called BFS.
 
-## BFS(Additional Class):
+### BFS(Additional Class):
 this cass contains 2 algorithms based on Breath's First Search algorithm shown in class.
 using a queue made by LinkedList and a boolean HashMap,
 created for preventing checking over the same node twice.
